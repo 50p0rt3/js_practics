@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js-uno.js"></script>
+    <title>js-uno</title>
+</head>
+
+<body style="background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);">
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <br /><br /><br />
+                <h1 class="bg-warning text-center">Funciones</h1>
+                <br /><br /><br />
+                <h2 class="bg-warning text-center">Sintaxis</h2>
+                <br /><br /><br />
+                <h3 class="bg-warning text-center">
+
+                    function saludo(){
+                    //pueden o no retornar algo
+                    }
+                </h3>
+                <br>
+                <h3 class="bg-warning text-center">
+
+                    Como se ejecuta?
+
+                    nombre_function();
+
+                    Ejemplo:
+                </h3>
+                <br>
+
+
+                <h3 class="bg-danger text-center">
+                    Ejemplo: Funcion que al ejecutarse cambia el contenido de un h4
+                </h3>
+                <br /><br />
+                <p id="p1" class="h4 bg-light">Texto que cambia!!!</p>
+                <br /><br />
+                <!--#####################################-->
+                <!--##########CODIGO JAVASCRIPT##########-->
+                <script>
+                    function cambiarText() {
+                        document.getElementById("p1").innerHTML = "He cambiando el contenido del parrafo h4";
+                    }
+                    cambiarText();
+                </script>
+
+                <br>
+                <h3 class="bg-danger text-center">
+                    Ejemplo: Funcion con 2 parametros
+                </h3>
+                <br /><br />
+                <p id="p2" class="h4 bg-light"></p>
+                <br /><br />
+                <!--#####################################-->
+                <!--##########CODIGO JAVASCRIPT##########-->
+                <script>
+                    function cambiarText(a, b) {
+                        return a * b;
+                    }
+                    //var result = cambiarText(3,4);
+                    document.getElementById("p2").innerHTML = "La multiplicacion de los 2 parametros es: " +
+                        cambiarText(3, 4);
+                </script>
+
+                <br>
+                <h3 class="bg-success text-center">
+                    Funcion anonima, no tienen nombre, puede utilizarse para
+                    asignarse directamente a una variable:
+                </h3>
+                <br /><br />
+                <p id="p2" class="h4 bg-light">var anonima = function(a,b){return a*b}</p>
+                <br /><br />
+
+                <br>
+                <h3 class="bg-success text-center">
+                    CONSTRUCTOR DE UNA FUNCION
+                </h3>
+                <br /><br />
+                <p id="p2" class="h4 bg-light">var anonima = function(a,b){return a*b}</p>
+                <br /><br />
+
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+
+    </div>
